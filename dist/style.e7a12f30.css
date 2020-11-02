@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+body > .background {
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+body {
+  background: #eee;
+}
+.globalHeader {
+  margin: 20px;
+}
+@media (min-width: 500px) {
+  .globalHeader {
+    margin: 0px 0 80px;
+  }
+}
+.searchForm {
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .searchForm {
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+.searchForm > .search {
+  width: 100%;
+  margin-right: 10px;
+  padding: 0 10px;
+  height: 40px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.searchForm > button {
+  white-space: nowrap;
+  padding: 0 28px;
+  border-radius: 5px;
+  border: none;
+  background: #18a0fb;
+  font-size: 16px;
+  color: #ffffff;
+}
+.globalMain {
+  max-width: 900px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+}
+.sitesList {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+  justify-content: space-between;
+}
+@media (min-width: 500px) {
+  .sitesList {
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+}
+.sitesList > li {
+  margin-bottom: 20px;
+}
+@media (min-width: 500px) {
+  .sitesList > a {
+    margin-right: 25px;
+    margin-bottom: 20px;
+  }
+}
+.sitesList .site {
+  width: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  padding: 20px 0;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+.sitesList .site .close {
+  position: absolute;
+  right: 0;
+  top: -4px;
+  display: none;
+  cursor: default;
+}
+.sitesList .site:hover .close {
+  display: block;
+}
+.sitesList .site .logo {
+  font-size: 64px;
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+.sitesList .site > .link {
+  font-size: 16px;
+  margin-top: 4px;
+}
+
+.last .addButton {
+  width: 160px;
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  background: white;
+}
+.last .addButton .icon {
+  width: 64px;
+  height: 64px;
+}
+.last .addButton .text {
+  font-size: 16px;
+  margin-top: 4px;
+}
+.note {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+}
+@media (max-width: 500px) {
+  .sitesList.site {
+    margin-left: 20px;
+  }
+  .self {
+    margin-left: 20px;
+  }
+}
+@media (min-width: 500px) {
+  .sitesList > li {
+    margin-right: 25px;
+  }
+}
+@media (max-width: 360px) {
+  .sitesList .site {
+    max-width: 135px;
+  }
+  .last .addButton {
+    max-width: 135px;
+  }
+}
+@media (max-width: 414px) and(min-width:414) {
+  .globalMain {
+    max-width: 390px;
+
+    margin-left: 28px;
+  }
+}
+@media (max-width: 768px) {
+  .globalMain {
+    margin-left: 25px;
+  }
+}
+@media (max-width: 540px) {
+  .globalMain {
+    margin-left: 4px;
+  }
+}
+
+
+/*# sourceMappingURL=style.e7a12f30.css.map */
